@@ -6,8 +6,8 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./todo.component.scss']
 })
 export class TodoComponent implements OnInit {
-  @Input() min: number;
-  @Input() max: number;
+  @Input() min = 0;
+  @Input() max = 0;
   number: number = 0;
   @Output() up = new EventEmitter<number>();
   @Output() down = new EventEmitter<number>();
@@ -15,6 +15,7 @@ export class TodoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.number = this.min;
   }
 
   upNumber() {
