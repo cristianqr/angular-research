@@ -21,6 +21,10 @@ const routes: Routes = [
     loadChildren: () => import('./dom-queries/dom-queries.module').then(m => m.DomQueriesModule),
   },
   {
+    path: 'custom-directives',
+    loadChildren: () => import('./custom-directives/custom-directives.module').then(m => m.CustomDirectivesModule),
+  },
+  {
     path: 'feature-a',
     loadChildren: () => import('./feature-a/feature-a.module').then(module => module.FeatureAModule),
   },

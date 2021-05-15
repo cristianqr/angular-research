@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { TodoComponent } from './todo/todo.component';
 import { IndexComponent } from './index/index.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { IndexComponent } from './index/index.component';
     NetworkingModule.forRoot({
       baseUrl: 'https://reqres.in',
     }),
-    StorageModule
+    StorageModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
