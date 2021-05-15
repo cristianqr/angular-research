@@ -1,11 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { IndexComponent } from './index/index.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    redirectTo: 'index',
+    pathMatch: 'full',
+  },
+  {
+    path: 'index',
+    component: IndexComponent,
+  },
+  {
+    path: 'content-projection',
+    loadChildren: () => import('./content-projection/content-projection.module').then(m => m.ContentProjectionModule),
+  },
+  {
+    path: 'dom-queries',
+    loadChildren: () => import('./dom-queries/dom-queries.module').then(m => m.DomQueriesModule),
   },
   {
     path: 'feature-a',

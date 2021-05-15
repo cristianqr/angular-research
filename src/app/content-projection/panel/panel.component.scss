@@ -1,0 +1,49 @@
+$panel-types: (
+  info: (
+    bgc: #bce8f1,
+    bc: #bce8f1,
+    color: #31708f,
+  ),
+  success: (
+    bgc: #dff0d8,
+    bc: #d6e9c6,
+    color: #3c763d,
+  ),
+  warning: (
+    bgc: #fcf8e3,
+    bc: #faebcc,
+    color: #8a6d3b,
+  ),
+  error: (
+    bgc: #f2dede,
+    bc: #ebccd1,
+    color: #a94442,
+  ),
+);
+
+.panel {
+  border: 1px solid;
+  $parent: &;
+
+  &-header {
+    padding: 5px 10px;
+  }
+
+  &-content {
+    padding: 1rem;
+  }
+
+  @each $type, $props in $panel-types {
+    &--#{$type} {
+      border-color: map-get($props, "bc");
+
+      #{$parent}-header {
+        background-color: map-get($props, "bgc");
+      }
+
+      #{$parent}-title {
+        color: map-get($props, "color");
+      }
+    }
+  }
+}

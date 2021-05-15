@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { TodoComponent } from './todo/todo.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { TodoComponent } from './todo/todo.component';
     FooterComponent,
     ContentComponent,
     TodoComponent,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,

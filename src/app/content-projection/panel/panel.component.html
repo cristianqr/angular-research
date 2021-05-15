@@ -1,0 +1,16 @@
+<div [className]="'panel panel--' + type">
+  <header class="panel-header">
+    <div class="panel-title">
+      {{ title }}
+    </div>
+  </header>
+  <main class="panel-content">
+    <div #ref>
+      <ng-content>
+      </ng-content>
+    </div>
+    <span *ngIf="ref.childNodes.length === 0">
+      Panel Content
+    </span>
+  </main>
+</div>
