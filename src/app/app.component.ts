@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-research';
+  test = 'hola como esta los anios';
   up(event: any) {
     console.log('upp', event);
   }
