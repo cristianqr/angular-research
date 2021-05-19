@@ -25,6 +25,10 @@ const routes: Routes = [
     loadChildren: () => import('./custom-directives/custom-directives.module').then(m => m.CustomDirectivesModule),
   },
   {
+    path: 'directives',
+    loadChildren: () => import('./directives/directives.module').then(m => m.DirectivesModule),
+  },
+  {
     path: 'feature-a',
     loadChildren: () => import('./feature-a/feature-a.module').then(module => module.FeatureAModule),
   },

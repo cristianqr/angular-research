@@ -1,10 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
-import { SharedModule } from '../shared/shared.module';
-import { RequiredComponent } from './required/required.component';
+import { NgClassExampleComponent } from './ng-class-example/ng-class-example.component';
+import { NgStyleExampleComponent } from './ng-style-example/ng-style-example.component';
 import { ContainerComponent } from './container/container.component';
-import { AttachFileComponent } from './attach-file/attach-file.component';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -16,13 +15,12 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     ContainerComponent,
-    RequiredComponent,
-    AttachFileComponent,
+    NgClassExampleComponent,
+    NgStyleExampleComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    SharedModule,
-  ]
+  ],
 })
-export class CustomDirectivesModule { }
+export class DirectivesModule { }
