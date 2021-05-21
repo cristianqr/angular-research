@@ -25,6 +25,10 @@ const routes: Routes = [
     loadChildren: () => import('./custom-directives/custom-directives.module').then(m => m.CustomDirectivesModule),
   },
   {
+    path: 'template-driven-form',
+    loadChildren: () => import('./template-driven-form/template-driven-form.module').then(m => m.TemplateDrivenFormModule),
+  },
+  {
     path: 'feature-a',
     loadChildren: () => import('./feature-a/feature-a.module').then(module => module.FeatureAModule),
   },
