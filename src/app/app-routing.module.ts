@@ -25,8 +25,12 @@ const routes: Routes = [
     loadChildren: () => import('./custom-directives/custom-directives.module').then(m => m.CustomDirectivesModule),
   },
   {
-    path: 'template-driven-form',
-    loadChildren: () => import('./template-driven-form/template-driven-form.module').then(m => m.TemplateDrivenFormModule),
+    path: 'custom-pipes',
+    loadChildren: () => import('./custom-pipes/custom-pipes.module').then(m => m.CustomPipesModule),
+  },
+  {
+    path: 'directives',
+    loadChildren: () => import('./directives/directives.module').then(m => m.DirectivesModule),
   },
   {
     path: 'feature-a',

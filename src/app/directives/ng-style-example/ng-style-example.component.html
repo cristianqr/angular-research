@@ -1,0 +1,12 @@
+<table border="1">
+  <thead>
+    <th>Name</th>
+    <th>Score</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{student.name}}</td>
+      <td [style.color]="student.score >= 10.5 ? 'blue' : 'red'">{{student.score}}</td>
+    </tr>
+  </tbody>
+</table>
