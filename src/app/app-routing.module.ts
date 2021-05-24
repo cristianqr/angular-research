@@ -33,6 +33,10 @@ const routes: Routes = [
     loadChildren: () => import('./directives/directives.module').then(m => m.DirectivesModule),
   },
   {
+    path: 'template-driven-form',
+    loadChildren: () => import('./template-driven-form/template-driven-form.module').then(m => m.TemplateDrivenFormModule),
+  },
+  {
     path: 'feature-a',
     loadChildren: () => import('./feature-a/feature-a.module').then(module => module.FeatureAModule),
   },
