@@ -11,6 +11,8 @@ import { ContentComponent } from './content/content.component';
 import { TodoComponent } from './todo/todo.component';
 import { IndexComponent } from './index/index.component';
 import { SharedModule } from './shared/shared.module';
+import { ReactiveFormModule } from './reactive-form/reactive-form.module';
+import { RepositoriesModule } from './shared-feature/repositories/repositories.module';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { SharedModule } from './shared/shared.module';
     }),
     StorageModule,
     SharedModule,
+    ReactiveFormModule,
+    RepositoriesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

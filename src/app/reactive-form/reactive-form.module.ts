@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExampleComponent } from './example/example.component';
 import { Routes, RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 const routes: Routes = [
   {
@@ -19,9 +19,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    FormsModule,
-    HttpClientModule,
-  ],
-  providers: [ ]
+    ReactiveFormsModule,
+  ]
 })
-export class TemplateDrivenFormModule { }
+export class ReactiveFormModule { }

@@ -29,6 +29,10 @@ const routes: Routes = [
     loadChildren: () => import('./custom-pipes/custom-pipes.module').then(m => m.CustomPipesModule),
   },
   {
+    path: 'reactive-forms',
+    loadChildren: () => import('./reactive-form/reactive-form.module').then(m => m.ReactiveFormModule),
+  },
+  {
     path: 'directives',
     loadChildren: () => import('./directives/directives.module').then(m => m.DirectivesModule),
   },
