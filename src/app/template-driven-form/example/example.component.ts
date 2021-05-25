@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Person } from '../models/person.model';
-import { CountryRepository } from '../repositories/country.repository';
+import { CountryRepository } from '../../shared-feature/repositories/country.repository';
 import { Framework } from '../models/framework.model';
 
 @Component({

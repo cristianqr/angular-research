@@ -1,0 +1,41 @@
+<form [formGroup]="personForm" (ngSubmit)="register()">
+  <div>
+    <input type="text" placeholder="First Name" formControlName="firstName" [class.invalid]="personForm.get('firstName')?.invalid && personForm.get('firstName')?.touched">
+  </div>
+
+  <div>
+    <input type="text" placeholder="Last Name" formControlName="lastName" [class.invalid]="invalidControl('lastName')">
+  </div>
+
+
+  <div>
+    <input type="text" placeholder="Email" formControlName="email" [class.invalid]="invalidControl('email')">
+  </div>
+
+  <div>
+    <label>Gender</label><br>
+    <label for="male"><input type="radio" id="male" name="gender" value="M" formControlName="gender"> Male</label> &nbsp;
+    <label for="female"><input type="radio" id="female" name="gender" value="F" formControlName="gender"> Female</label>
+  </div>
+
+  <fieldset formGroupName="address">
+    <legend>Addres</legend>
+    <select formControlName="country">
+      <option value="null">-- Select Country --</option>
+      <option *ngFor="let country of countries">{{country.name}}</option>
+    </select><br><br>
+
+    <div>
+      <input type="text" placeholder="Street" formControlName="street">
+    </div>
+
+    <div>
+      <input type="text" placeholder="Zip" formControlName="zip">
+    </div>
+  </fieldset><br>
+
+  <div>
+    <button type="submit" [disabled]="personForm.invalid">Register</button>
+    <button type="reset" (click)="reset($event)">Reset</button>
+  </div>
+</form>
