@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { PanelType } from './models';
 
 @Component({
-  selector: 'app-panel',
+  selector: 'cqr-panel',
   templateUrl: './panel.component.html',
   styleUrls: ['./panel.component.scss']
 })

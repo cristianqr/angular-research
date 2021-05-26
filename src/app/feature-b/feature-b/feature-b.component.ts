@@ -3,7 +3,7 @@ import { NetworkingService } from '../../shared/networking/networking.service';
 import { StorageService } from '../../shared/storage/storage.service';
 
 @Component({
-  selector: 'app-feature-b',
+  selector: 'cqr-feature-b',
   templateUrl: './feature-b.component.html',
   styleUrls: ['./feature-b.component.scss']
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-container',
+  selector: 'cqr-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.scss']
 })

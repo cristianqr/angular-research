@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-focus',
+  selector: 'cqr-focus',
   templateUrl: './focus.component.html',
   styleUrls: ['./focus.component.scss']
 })

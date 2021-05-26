@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-ng-style-example',
+  selector: 'cqr-ng-style-example',
   templateUrl: './ng-style-example.component.html',
   styleUrls: ['./ng-style-example.component.scss']
 })

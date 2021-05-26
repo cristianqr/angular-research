@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-todo',
+  selector: 'cqr-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.scss']
 })

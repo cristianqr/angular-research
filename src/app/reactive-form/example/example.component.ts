@@ -3,7 +3,7 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
 import { CountryRepository } from '../../shared-feature/repositories/country.repository';
 
 @Component({
-  selector: 'app-example',
+  selector: 'cqr-example',
   templateUrl: './example.component.html',
   styleUrls: ['./example.component.scss']
 })

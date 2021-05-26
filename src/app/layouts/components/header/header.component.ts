@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'ndl-header',
+  selector: 'cqr-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })

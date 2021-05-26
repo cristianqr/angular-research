@@ -1,7 +1,7 @@
 import { Component, OnInit, ɵConsole } from '@angular/core';
 
 @Component({
-  selector: 'app-attach-file',
+  selector: 'cqr-attach-file',
   templateUrl: './attach-file.component.html',
   styleUrls: ['./attach-file.component.scss']
 })

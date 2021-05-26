@@ -4,7 +4,7 @@ import { CountryRepository } from '../../shared-feature/repositories/country.rep
 import { Framework } from '../models/framework.model';
 
 @Component({
-  selector: 'app-example',
+  selector: 'cqr-example',
   templateUrl: './example.component.html',
   styleUrls: ['./example.component.scss']
 })

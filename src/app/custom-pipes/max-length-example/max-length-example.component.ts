@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-max-length-example',
+  selector: 'cqr-max-length-example',
   templateUrl: './max-length-example.component.html',
   styleUrls: ['./max-length-example.component.scss']
 })

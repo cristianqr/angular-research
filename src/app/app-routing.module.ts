@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './index/index.component';
+import { DefaultComponent } from './layouts/default/default.component';
 
 const routes: Routes = [
   {
@@ -9,8 +10,22 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'index',
-    component: IndexComponent,
+    path: '',
+    component: DefaultComponent,
+    children: [
+      {
+        path: 'index',
+        component: IndexComponent,
+      },
+      {
+        path: 'people',
+        loadChildren: () => import('./people/people.module').then(m => m.PeopleModule),
+      },
+    ],
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule),
   },
   {
     path: 'content-projection',
